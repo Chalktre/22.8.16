@@ -1,0 +1,42 @@
+.main {
+    background-color: aqua;
+    border: 2px solid yellow;
+    /* overflow: hidden; */
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+    /* height: 0; */
+    /* visibility: hidden; */
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* standard float clear */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* for IE6,7 */
+
+.clear {
+    clear: both;
+}
+
+.a,
+.b {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    float: left;
+}
+
+.ot {
+    height: 200px;
+    background-color: yellowgreen;
+}
